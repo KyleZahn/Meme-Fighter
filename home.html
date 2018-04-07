@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Meme Fighter</title>
+    <link type="text/css" rel="stylesheet" href="game/css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="home">
+        <img class="title" src="game/images/logo.png">
+    </div>
+
+    <div class="characters">
+        <div class="doge" onclick="setCharacter(doge)">
+            <img src="game/images/doge_avi.png" width="144px" height="120px">
+            <h1 class="name">8-bit Doge</h1>
+        </div>
+
+        <div class="knuckles" onclick="setCharacter(knuckles)">
+            <img src="game/images/knuckles_avi.png" width="144px" height="120px">
+            <h1 class="name">Ugandan Knuckles</h1>
+        </div>
+    </div>
+
+    <div class="home">
+        <a href="#" onclick="play()">
+            <img class="play" src="game/images/play.png">
+        </a>
+    </div>
+
+
+
+    <script type="text/javascript" src="game/js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var knuckles = $('.knuckles');
+        var doge = $('.doge');
+        var chosenChar = 5;
+
+        setCharacter = (char) => {
+            if (char.selector === '.knuckles') {
+                char.addClass('chose');
+                doge.removeClass('chose');
+                chosenChar = 2;
+            }
+            if (char.selector === '.doge') {
+                char.addClass('chose');
+                knuckles.removeClass('chose');
+                 chosenChar = 1;
+            }
+        };
+
+        play = () => {
+            if (chosenChar === 1) {
+                console.log('load doge');
+                window.location.href = "/index";
+            } else {
+                console.log('load knuckles');
+                window.location.href = "/index";
+            }
+        };
+    </script>
+</body>
+
+</html>

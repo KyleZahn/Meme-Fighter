@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Bangers);
+
+.doge { position: absolute; background-repeat: no-repeat; bottom: 112px; margin-left: 90px; width: 72px; height: 90px; background-image: url(../images/doge.png); }
+
+/* stance */ /* 17 13 to -333 13 */
+.dogeStance { 
+    -webkit-animation: dogeStance steps(5) 1.8s infinite;
+     -moz-animation: dogeStance steps(5) 1.8s infinite;
+      -ms-animation: dogeStance steps(5) 1.8s infinite;
+       animation: dogeStance steps(5) 1.8s infinite;
+    }
+
+@-webkit-keyframes dogeStance { from { background-position: 17px 13px; }
+  to { background-position: -333px 13px; } }
+
+@-moz-keyframes dogeStance { from { background-position: 17px 13px; }
+  to { background-position: -333px 13px; } }
+
+@-ms-keyframes dogeStance { from { background-position: 17px 13px; }
+  to { background-position: -333px 13px; } }
+
+@keyframes dogeStance { from { background-position: 17px 13px; }
+  to { background-position: -333px 13px; } }
+
+/* walking */
+.dogeWalk { 
+  -webkit-animation: dogeWalk steps(2) 0.4s infinite;
+  -moz-animation: dogeWalk steps(2) 0.4s infinite;
+   -ms-animation: dogeWalk steps(2) 0.4s infinite;
+    animation: dogeWalk steps(2) 0.4s infinite;
+ }
+
+@-webkit-keyframes dogeWalk { from { background-position: 16px -166px; }
+to { background-position: -95px -166px; } }
+
+@-moz-keyframes dogeWalk { from { background-position: 16px -166px; }
+to { background-position: -95px -166px; } }
+
+@-ms-keyframes dogeWalk { from { background-position: 16px -166px; }
+to { background-position: -95px -166px; } }
+
+@keyframes dogeWalk { from { background-position: 16px -166px; }
+to { background-position: -95px -166px; } }
+
+/* lick attack */
+.dogeLick {
+  -webkit-animation: dogeLick steps(4) 0.4s infinite;
+  -moz-animation: dogeLick steps(4) 0.4s infinite;
+   -ms-animation: dogeLick steps(4) 0.4s infinite;
+    animation: dogeLick steps(4) 0.4s infinite;
+ }
+
+@-webkit-keyframes dogeLick { from { background-position: 14.35px -539px; }
+to { background-position: -270px -539px; } }
+
+@-moz-keyframes dogeLick { from { background-position: 14.35px -539px; }
+to { background-position: -270px -539px; } }
+
+@-ms-keyframes dogeLick { from { background-position: 14.35px -539px; }
+to { background-position: -270px -539px; } }
+
+@keyframes dogeLick { from { background-position: 14.35px -539px; }
+to { background-position: -270px -539px; } }
+
+/* 
+ Jumping
+*/
+.dogeJump {
+  -webkit-transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42);
+  -moz-transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42);
+   -ms-transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42);
+    transition: bottom 0.5s cubic-bezier(0.99, 0.005, 0, 0.42);
+     bottom: 225px; 
+      -webkit-animation: dogeJump steps(1) 1s infinite;
+       -moz-animation: dogeJump steps(1) 1s infinite;
+        -ms-animation: dogeJump steps(1) 1s infinite;
+         animation: dogeJump steps(1) 1s infinite;
+      }
+
+.dogeJump.down { bottom: 112px; }
+
+@-webkit-keyframes dogeJump { from { background-position: 16px -288px; }
+ to { background-position: -200px 100px; } }
+
+@-moz-keyframes dogeJump { from { background-position: 16px -288px; }
+ to { background-position: -200px 100px; } }
+
+@-ms-keyframes dogeJump { from { background-position: 16px -288px; }
+ to { background-position: -200px 100px; } }
+
+@keyframes dogeJump { from { background-position: 16px -288px; }
+ to { background-position: -200px 100px; } }
