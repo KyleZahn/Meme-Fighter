@@ -17,9 +17,9 @@ Movement is rendered by the adding of CSS keyframes.
 ```
 <script type="text/javascript" src="game/js/jquery.min.js"></script>
 <script type="text/javascript" src="game/js/doge.js"></script>
-
+```
 **(in doge.js)**
-
+```
 $(document).on('keydown keyup', function (e) {
     if (e.type == 'keydown') {
 
